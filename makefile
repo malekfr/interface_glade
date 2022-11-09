@@ -1,7 +1,7 @@
-prog:gestionbv.o main.o
-	gcc gestionbv.o main.o -o prog
+prog: gestionUtilisateurs.o main.o
+	gcc gestionUtilisateurs.o main.o -o prog -g
 main.o:main.c
-	gcc -c main.c
-gestionbv.o:gestionbv.c
-	gcc -c gestionbv.c
+	gcc -c main.c -g
+gestionUtilisateurs.o:gestionUtilisateurs.c
+	gcc -c gestionUtilisateurs.c -g
 
